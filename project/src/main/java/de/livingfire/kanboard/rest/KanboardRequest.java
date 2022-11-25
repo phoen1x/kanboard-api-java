@@ -22,7 +22,7 @@ public class KanboardRequest {
     @Override
     public String toString() {
         return "KanboardRequest [jsonrpc=" + this.jsonrpc + ", method=" + this.method + ", id=" + this.id + ", params="
-                + this.params + "]]]]";
+                + this.params + "]";
     }
 
     public String getJsonrpc() {
