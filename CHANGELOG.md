@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.20
+* no API source code changes since 1.2.14
+* existing API source code runs fine with Dockerhub kanboard/kanboard:v1.2.20
+
 ## 1.2.19
 * no API source code changes since 1.2.14
 * existing API source code runs fine with Dockerhub kanboard/kanboard:v1.2.19
