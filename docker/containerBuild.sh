@@ -1,12 +1,12 @@
 #!/bin/bash
 DOCKER_PROJECT="kanboard"
-KANBOARD_VERSION="1.0.41"
+KANBOARD_VERSION="1.2.15"
 DOCKER_CONTAINER_KANBOARD="${DOCKER_PROJECT}_test"
 DOCKER_CONTAINER_MAVEN="${DOCKER_PROJECT}_maven"
 DOCKER_IMAGE_KANBOARD="$DOCKER_CONTAINER_KANBOARD:$KANBOARD_VERSION"
 DOCKER_IMAGE_MAVEN="$DOCKER_CONTAINER_MAVEN"
 
-# check volumes 
+# check volumes
 echo "--- checking volumes"
 if [[ ! -d "./_volumes" ]]; then
     echo "folder missing: ./_volumes"
