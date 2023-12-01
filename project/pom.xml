@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.livingfire</groupId>
     <artifactId>kanboard-api-java</artifactId>
-    <version>1.2.21</version>
+    <version>1.2.18</version>
     <packaging>jar</packaging>
 
     <name>kanboard-api-java</name>
@@ -22,14 +24,14 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.9.10.8</version>
+            <version>2.16.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml -->
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
-            <version>2.9.10</version>
+            <version>2.16.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all -->
@@ -44,7 +46,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
 
@@ -84,7 +86,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+                    <argLine>
+                        -Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
                     <excludes>
                         <exclude>**/Kanboard**IntegrationTest.java</exclude>
                     </excludes>
